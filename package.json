@@ -1,0 +1,31 @@
+{
+  "name": "flip-card-custom-element",
+  "version": "1.0.0",
+  "description": "Flip Card Custom Element using Custom Elements v1",
+  "main": "index.html",
+  "scripts": {
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuinntyneBrown/filp-card-custom-element.git"
+  },
+  "author": "Quinntyne Brown",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^7.0.27",
+    "awesome-typescript-loader": "^3.0.0-beta.9",
+    "html-loader": "^0.4.4",
+    "node-sass": "^3.10.1",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.5",
+    "ts-loader": "0.8.2",
+    "typescript": "^2.2.0",
+    "uglify-loader": "^1.3.0",
+    "webpack": "^2.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/QuinntyneBrown/filp-card-custom-element/issues"
+  },
+  "homepage": "https://github.com/QuinntyneBrown/filp-card-custom-element#readme"
+}
