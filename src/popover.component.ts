@@ -12,7 +12,9 @@ export class PopoverComponent extends HTMLElement {
     }
 
     static get observedAttributes () {
-        return [];
+        return [
+            "host-element-query"
+        ];
     }
 
     connectedCallback() {
@@ -23,7 +25,7 @@ export class PopoverComponent extends HTMLElement {
     }
 
     private async _bind() {
-
+        this.hostElement = this.parentElement.querySelector(this.hostElementQuery) as HTMLElement;
     }
 
     private _setEventListeners() {
@@ -36,9 +38,14 @@ export class PopoverComponent extends HTMLElement {
 
     public hostElementId: string;
 
+    public hostElement: HTMLElement;
+
+    public hostElementQuery: string;
+
     attributeChangedCallback (name, oldValue, newValue) {
         switch (name) {
-            default:
+            case "host-element-query":
+                this.hostElementQuery = newValue;
                 break;
         }
     }
