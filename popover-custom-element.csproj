@@ -132,6 +132,7 @@
     <TypeScriptCompile Include="src\popover.component.ts" />
     <TypeScriptCompile Include="src\popover.d.ts" />
     <TypeScriptCompile Include="src\popover.service.ts" />
+    <TypeScriptCompile Include="src\position.ts" />
     <TypeScriptCompile Include="src\rectangle.ts" />
     <TypeScriptCompile Include="src\ruler.ts" />
     <TypeScriptCompile Include="src\space.ts" />
