@@ -1,14 +1,14 @@
 {
-  "name": "flip-card-custom-element",
+  "name": "popover-custom-element",
   "version": "1.0.0",
-  "description": "Flip Card Custom Element using Custom Elements v1",
+  "description": "Popover Custom Element using Custom Elements v1",
   "main": "index.html",
   "scripts": {
     "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QuinntyneBrown/filp-card-custom-element.git"
+    "url": "git+https://github.com/QuinntyneBrown/popover-custom-element.git"
   },
   "author": "Quinntyne Brown",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "webpack": "^2.2.1"
   },
   "bugs": {
-    "url": "https://github.com/QuinntyneBrown/filp-card-custom-element/issues"
+    "url": "https://github.com/QuinntyneBrown/popover-custom-element/issues"
   },
-  "homepage": "https://github.com/QuinntyneBrown/filp-card-custom-element#readme"
+  "homepage": "https://github.com/QuinntyneBrown/popover-custom-element#readme"
 }

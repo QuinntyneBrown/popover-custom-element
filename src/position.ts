@@ -4,7 +4,11 @@ import {Ruler} from "./ruler";
 import {translateXY} from "./translate-xy";
 
 export class Position {
-    constructor(private _ruler: Ruler, private _space:Space) {
+    constructor(
+        private _ruler: Ruler,
+        private _space: Space,
+        private _translateXY: {(element:HTMLElement, x:number, y:number):HTMLElement}
+    ) {
 
     }
 
@@ -20,7 +24,7 @@ export class Position {
                 .then((resultsArray: Array<Rectangle>) => {
                     var rectangleA = resultsArray[0];
                     var rectangleB = resultsArray[1];
-                    translateXY(b, rectangleA.centerX - rectangleB.radiusX, rectangleA.bottom + space);
+                    this._translateXY(b, rectangleA.centerX - rectangleB.radiusX, rectangleA.bottom + space);
                     resolve();
                 });            
         });

@@ -9,6 +9,7 @@ template.innerHTML = `<style>${css}</style>${html}`;
 export class PopoverComponent extends HTMLElement {
     constructor(private _popoverService: PopoverService) {
         super();
+        this.open = this.open.bind(this);
     }
 
     static get observedAttributes () {
@@ -25,15 +26,19 @@ export class PopoverComponent extends HTMLElement {
     }
 
     private async _bind() {
-        this.hostElement = this.parentElement.querySelector(this.hostElementQuery) as HTMLElement;
+        this.hostElement = this.parentElement.querySelector(this.hostElementQuery) as HTMLElement;        
     }
 
     private _setEventListeners() {
-
+        this.hostElement.addEventListener("click", this.open);
     }
 
     disconnectedCallback() {
+        this.hostElement.removeEventListener("click", this.open);
+    }
 
+    public open() {
+        alert("Open");
     }
 
     public hostElementId: string;
